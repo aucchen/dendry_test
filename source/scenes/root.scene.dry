@@ -1,0 +1,30 @@
+title: Root Scene
+new-page: true
+
+= Title
+
+> Quote
+
+>> Attribution
+
+*This should be italicized.*
+
+**This should be bolded.**
+
+Should see asterix: \* \*
+
+Should see slash-asterix: \\\* \\\*
+
+Should see slash-slash-asterix: \\\\* \\\\*
+
+Should see brackets: \[ \]
+
+Code: `this should be monospaced.`
+
+Javascript: {! <script>dendryUI.dendryEngine.state.qualities['name'] = prompt('Enter your name:');</script> !}
+
+In-text link: {!<a href="#" onclick="dendryUI.dendryEngine.goToScene('one');">Scene One</a>!}
+
+
+# Scenes with a top tag can be displayed here.
+- #top

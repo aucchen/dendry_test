@@ -1,0 +1,6 @@
+title: Name
+subtitle: Your name is [+ name +]
+new-page: true
+tags: top
+go-to: one
+
