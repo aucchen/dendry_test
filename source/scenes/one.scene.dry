@@ -1,6 +1,7 @@
 title: Scene One
 new-page: true
 tags: top
+max-choices: 4
 
 [? if name = "name" : Should only see this if your name is "name". ?]
 
@@ -9,3 +10,5 @@ Your name is [+ name +]
 {!<ul>!}
 {!<li>!}Name: [+ name +]{!</li>!}
 {!</ul>!}
+
+- #asdf

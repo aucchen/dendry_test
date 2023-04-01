@@ -1,4 +1,4 @@
-window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\"content\":\"\",\"scenes\":{\"prevScene\":{\"id\":\"prevScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"prevTopScene\":{\"id\":\"prevTopScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"jumpScene\":{\"id\":\"jumpScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"backSpecialScene\":{\"id\":\"backSpecialScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"returnScene\":{\"id\":\"returnScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"one\":{\"id\":\"one\",\"type\":\"scene\",\"title\":\"Scene One\",\"newPage\":true,\"tags\":[\"top\"],\"content\":{\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"conditional\",\"content\":\"Should only see this if your name is \\\"name\\\". \",\"predicate\":0},\"\"]},{\"type\":\"paragraph\",\"content\":[\"Your name is \",{\"type\":\"insert\",\"insert\":1},\"\"]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"magic\",\"content\":\"<ul>\"},\" \",{\"type\":\"magic\",\"content\":\"<li>\"},\"Name: \",{\"type\":\"insert\",\"insert\":2},{\"type\":\"magic\",\"content\":\"</li>\"},\" \",{\"type\":\"magic\",\"content\":\"</ul>\"}]}],\"stateDependencies\":[{\"type\":\"predicate\",\"fn\":{\"$code\":\"return (Q['name'] == \\\"name\\\");\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]}},\"root\":{\"id\":\"root\",\"type\":\"scene\",\"title\":\"Root Scene\",\"newPage\":true,\"options\":[{\"id\":\"#top\"}],\"content\":[{\"type\":\"heading\",\"content\":\"Title\"},{\"type\":\"quotation\",\"content\":\"Quote\"},{\"type\":\"attribution\",\"content\":\"Attribution\"},{\"type\":\"paragraph\",\"content\":[{\"type\":\"emphasis-1\",\"content\":\"This should be italicized.\"},\"\"]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"emphasis-2\",\"content\":\"This should be bolded.\"},\"\"]},{\"type\":\"paragraph\",\"content\":\"Should see asterix: * *\"},{\"type\":\"paragraph\",\"content\":\"Should see slash-asterix: \\\\* \\\\*\"},{\"type\":\"paragraph\",\"content\":\"Should see slash-slash-asterix: \\\\\\\\* \\\\\\\\*\"},{\"type\":\"paragraph\",\"content\":\"Should see brackets: [ ]\"},{\"type\":\"paragraph\",\"content\":[\"Code: \",{\"type\":\"emphasis-3\",\"content\":\"this should be monospaced.\"},\"\"]},{\"type\":\"paragraph\",\"content\":[\"Javascript: \",{\"type\":\"magic\",\"content\":\" <script>dendryUI.dendryEngine.state.qualities['name'] = prompt('Enter your name:');</script> \"},\"\"]},{\"type\":\"paragraph\",\"content\":[\"In-text link: \",{\"type\":\"magic\",\"content\":\"<a href=\\\"#\\\" onclick=\\\"dendryUI.dendryEngine.goToScene('one');\\\">Scene One</a>\"}]}]},\"three\":{\"id\":\"three\",\"type\":\"scene\",\"title\":\"Name\",\"subtitle\":{\"content\":[\"Your name is \",{\"type\":\"insert\",\"insert\":0}],\"stateDependencies\":[{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]},\"newPage\":true,\"tags\":[\"top\"],\"goTo\":[{\"id\":\"one\"}],\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"two\":{\"id\":\"two\",\"type\":\"scene\",\"title\":{\"content\":{\"type\":\"insert\",\"insert\":0},\"stateDependencies\":[{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]},\"newPage\":true,\"tags\":[\"top\"],\"content\":{\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"conditional\",\"content\":\"Should only see this if your name is \\\"name\\\". \",\"predicate\":0},\"\"]},{\"type\":\"paragraph\",\"content\":[\"Your name is \",{\"type\":\"insert\",\"insert\":1},\"\"]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"magic\",\"content\":\"<ul>\"},\" \",{\"type\":\"magic\",\"content\":\"<li>\"},\"Name: \",{\"type\":\"insert\",\"insert\":2},{\"type\":\"magic\",\"content\":\"</li>\"},\" \",{\"type\":\"magic\",\"content\":\"</ul>\"}]}],\"stateDependencies\":[{\"type\":\"predicate\",\"fn\":{\"$code\":\"return (Q['name'] == \\\"name\\\");\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]}}},\"qualities\":{},\"qdisplays\":{},\"tagLookup\":{\"top\":{\"one\":true,\"three\":true,\"two\":true}}}"};(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\"content\":\"\",\"scenes\":{\"prevScene\":{\"id\":\"prevScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"prevTopScene\":{\"id\":\"prevTopScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"jumpScene\":{\"id\":\"jumpScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"backSpecialScene\":{\"id\":\"backSpecialScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"returnScene\":{\"id\":\"returnScene\",\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"one\":{\"id\":\"one\",\"type\":\"scene\",\"title\":\"Scene One\",\"newPage\":true,\"tags\":[\"top\"],\"maxChoices\":4,\"options\":[{\"id\":\"#asdf\"}],\"content\":{\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"conditional\",\"content\":\"Should only see this if your name is \\\"name\\\". \",\"predicate\":0},\"\"]},{\"type\":\"paragraph\",\"content\":[\"Your name is \",{\"type\":\"insert\",\"insert\":1},\"\"]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"magic\",\"content\":\"<ul>\"},\" \",{\"type\":\"magic\",\"content\":\"<li>\"},\"Name: \",{\"type\":\"insert\",\"insert\":2},{\"type\":\"magic\",\"content\":\"</li>\"},\" \",{\"type\":\"magic\",\"content\":\"</ul>\"}]}],\"stateDependencies\":[{\"type\":\"predicate\",\"fn\":{\"$code\":\"return (Q['name'] == \\\"name\\\");\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]}},\"root\":{\"id\":\"root\",\"type\":\"scene\",\"title\":\"Root Scene\",\"newPage\":true,\"options\":[{\"id\":\"#asdf\"}],\"content\":[{\"type\":\"heading\",\"content\":\"Title\"},{\"type\":\"quotation\",\"content\":\"Quote\"},{\"type\":\"attribution\",\"content\":\"Attribution\"},{\"type\":\"paragraph\",\"content\":[{\"type\":\"emphasis-1\",\"content\":\"This should be italicized.\"},\"\"]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"emphasis-2\",\"content\":\"This should be bolded.\"},\"\"]},{\"type\":\"paragraph\",\"content\":\"Should see asterix: * *\"},{\"type\":\"paragraph\",\"content\":\"Should see slash-asterix: \\\\* \\\\*\"},{\"type\":\"paragraph\",\"content\":\"Should see slash-slash-asterix: \\\\\\\\* \\\\\\\\*\"},{\"type\":\"paragraph\",\"content\":\"Should see brackets: [ ]\"},{\"type\":\"paragraph\",\"content\":[\"Code: \",{\"type\":\"emphasis-3\",\"content\":\"this should be monospaced.\"},\"\"]},{\"type\":\"paragraph\",\"content\":[\"Javascript: \",{\"type\":\"magic\",\"content\":\" <script>dendryUI.dendryEngine.state.qualities['name'] = prompt('Enter your name:');</script> \"},\"\"]},{\"type\":\"paragraph\",\"content\":[\"In-text link: \",{\"type\":\"magic\",\"content\":\"<a href=\\\"#\\\" onclick=\\\"dendryUI.dendryEngine.goToScene('one');\\\">Scene One</a>\"},\"\"]},{\"type\":\"paragraph\",\"content\":[\"In-text link: \",{\"type\":\"magic\",\"content\":\"<a href=\\\"#\\\" onclick=\\\"dendryUI.dendryEngine.goToScene('two');\\\">Scene Two</a>\"},\"\"]},{\"type\":\"paragraph\",\"content\":[\"In-text link: \",{\"type\":\"magic\",\"content\":\"<a href=\\\"#\\\" onclick=\\\"dendryUI.dendryEngine.goToScene('three');\\\">Scene Three</a>\"}]}]},\"three\":{\"id\":\"three\",\"type\":\"scene\",\"title\":\"Name\",\"subtitle\":{\"content\":[\"Your name is \",{\"type\":\"insert\",\"insert\":0}],\"stateDependencies\":[{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]},\"newPage\":true,\"tags\":[\"top\"],\"goTo\":[{\"id\":\"one\"}],\"content\":{\"content\":\"\",\"type\":\"paragraph\"}},\"two\":{\"id\":\"two\",\"type\":\"scene\",\"title\":{\"content\":{\"type\":\"insert\",\"insert\":0},\"stateDependencies\":[{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]},\"newPage\":true,\"tags\":[\"top\"],\"content\":{\"content\":[{\"type\":\"paragraph\",\"content\":[{\"type\":\"conditional\",\"content\":\"Should only see this if your name is \\\"name\\\". \",\"predicate\":0},\"\"]},{\"type\":\"paragraph\",\"content\":[\"Your name is \",{\"type\":\"insert\",\"insert\":1},\"\"]},{\"type\":\"paragraph\",\"content\":[{\"type\":\"magic\",\"content\":\"<ul>\"},\" \",{\"type\":\"magic\",\"content\":\"<li>\"},\"Name: \",{\"type\":\"insert\",\"insert\":2},{\"type\":\"magic\",\"content\":\"</li>\"},\" \",{\"type\":\"magic\",\"content\":\"</ul>\"}]}],\"stateDependencies\":[{\"type\":\"predicate\",\"fn\":{\"$code\":\"return (Q['name'] == \\\"name\\\");\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}},{\"type\":\"insert\",\"fn\":{\"$code\":\"return (Q['name'] || 0);\"}}]}},\"four\":{\"id\":\"four\",\"type\":\"scene\",\"title\":\"Scene four\",\"tags\":[\"asdf\"],\"viewIf\":{\"$code\":\"return (1===0);\"},\"content\":{\"content\":\"\",\"type\":\"paragraph\"}}},\"qualities\":{},\"qdisplays\":{},\"tagLookup\":{\"top\":{\"one\":true,\"three\":true,\"two\":true},\"asdf\":{\"four\":true}}}"};(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /* dendry
  * http://github.com/idmillington/dendry
  *
@@ -212,6 +212,9 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
   UserInterface.prototype.setStyle = function(style) {};
   UserInterface.prototype.signal = function(data) {};
   UserInterface.prototype.setBg = function(img) {};
+  UserInterface.prototype.setSprites = function(data) {};
+  UserInterface.prototype.setSpriteStyle = function(loc, style) {};
+  UserInterface.prototype.audio = function(audio) {};
   // Not part of the UI, but allows us to simply subclass.
   UserInterface.makeParentOf = function(OtherConstructor) {
     OtherConstructor.prototype = new UserInterface();
@@ -330,7 +333,7 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
       // @jumpScene will go to. Basically it's used to make subroutines.
       jumpSceneId: null,
       // achievements is a dict of all the current achievements.
-      // TODO: persist achievements in the browser through localstorage?
+      // persist achievements in the browser through localstorage?
       achievements: {},
       // current background image
       bg: null,
@@ -338,6 +341,12 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
       sceneStack: [],
       // true if just popped out of a returnScene
       justReturned: false,
+      // just returned from a goSubStart
+      justReturnedStart: false,
+      // just returned from a goSubEnd
+      justReturnedEnd: false,
+      // sprites is a mapping from location to file
+      sprites: {},
     };
 
     this._setUpQualities();
@@ -406,6 +415,8 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
       this.ui.removeChoices();
       this.ui.displayContent(this.state.currentContent);
       this.displayChoices();
+      this.ui.setSprites(this.state.sprites);
+      this.ui.setBg(this.state.bg);
     }
     return this;
   };
@@ -732,6 +743,26 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
         this.state.bg = scene.setBg;
         this.ui.setBg(scene.setBg);
     }
+    if (scene.setSprites) {
+        this.state.sprites = scene.setSprites;
+        this.ui.setSprites(scene.setSprites);
+    }
+    if (scene.audio) {
+        this.ui.audio(scene.audio);
+    }
+    // TODO: there has got to be a better way of doing this.
+    if (scene.setTopLeftStyle) {
+        this.ui.setSpriteStyle('topLeft', scene.setTopLeftStyle);
+    }
+    if (scene.setTopRightStyle) {
+        this.ui.setSpriteStyle('topRight', scene.setTopRightStyle);
+    }
+    if (scene.setBottomLeftStyle) {
+        this.ui.setSpriteStyle('bottomLeft', scene.setBottomLeftStyle);
+    }
+    if (scene.setBottomRightStyle) {
+        this.ui.setSpriteStyle('bottomRight', scene.setBottomRightStyle);
+    }
     // update achievement
     if (scene.achievement) {
         this.state.achievements[scene.achievement] = 1;
@@ -748,7 +779,7 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
     if (scene.gameOver === true) {
       done = true;
       this.gameOver();
-    } else if (scene.goSub && !this.state.justReturned) {
+    } else if (scene.goSubEnd && !this.state.justReturnedEnd) {
       // goSub
       var validSubs = [];
       for (var s1 = 0; s1 < scene.goSub.length; ++s1) {
@@ -1181,11 +1212,16 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
     this.animate = false;
     this.animate_bg = true;
     // backgrounds and portraits are 100% optional, and most games will not use them.
-    this.show_portraits = false;
+    this.show_portraits = true;
     this.fade_time = 600;
     this.bg_fade_out_time = 200;
     this.bg_fade_in_time = 1000;
     this.contentToHTML = contentToHTML;
+
+    // sprites
+    this.spriteLocs = {'topLeft': 1, 'topRight': 1, 'bottomLeft': 1, 'bottomRight': 1};
+    // audio
+    this.currentAudio = null;
   };
   engine.UserInterface.makeParentOf(BrowserUserInterface);
 
@@ -1284,15 +1320,19 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
         }
     }
   };
+
   BrowserUserInterface.prototype.signal = function(data) {
     // TODO: implement signals - signals contain signal, event, and id
     console.log(data);
     var signal = data.signal;
+    var event = data.event; // scene-arrival, scene-display, scene-departure, quality-change
+    var scene_id = data.id;
     // TODO: handle this in the game.js for each specific game
     if (window && window.handleSignal) {
-        window.handleSignal(signal);
+        window.handleSignal(signal, event, scene_id);
     }
   };
+
   BrowserUserInterface.prototype.setBg = function(image_url) {
       if (!image_url || image_url == 'none' || image_url == 'null' || this.disable_bg) {
           if (this.animate_bg) {
@@ -1307,7 +1347,7 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
           } else {
               $('#bg1').css('backgroundImage', 'none'); 
           }
-      } else if (image_url.startsWith('#') || image_url.startsWith('rgba(')) {
+      } else if (image_url.startsWith('#') || image_url.startsWith('rgba(') || image_url.startsWith('rgb(')) {
           if (this.animate_bg) {
             $('#bg1').addClass('content_hidden');
             $('#bg1').removeClass('content_visible');
@@ -1337,6 +1377,102 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
     }
   };
 
+  // TODO: set sprites given data
+  // data is a list of two-element lists, where the first element is location
+  // (one of topLeft, topRight, bottomLeft, bottomRight)
+  // and the second element is the sprite.
+  BrowserUserInterface.prototype.setSprites = function(data) {
+      if (window.setSprites) {
+          window.setSprites(data);
+          return;
+      }
+      if (!this.show_portraits || data == 'none' || data == 'clear') {
+          $('#topLeftSprite').children().fadeOut(this.fade_time);
+          $('#topRightSprite').children().fadeOut(this.fade_time);
+          $('#bottomLeftSprite').children().fadeOut(this.fade_time);
+          $('#bottomRightSprite').children().fadeOut(this.fade_time);
+
+          $('#topLeftSprite').empty();
+          $('#topRightSprite').empty();
+          $('#bottomLeftSprite').empty();
+          $('#bottomRightSprite').empty();
+          return;
+      } else {
+          if (data instanceof Array) {
+              for (var i = 0; i < data.length; i++) {
+                  var loc = data[i][0];
+                  var img = data[i][1];
+                  this.setSprite(loc, img);
+              }
+          } else if (data) {
+                for (var key in Object.keys(data)) {
+                  sprites.push([key, data[key]]);
+              }
+          }
+      }
+  };
+
+  BrowserUserInterface.prototype.setSprite = function(loc, img) {
+      if (!this.show_portraits) {
+          return;
+      }
+      if (window.setSprite) {
+          window.setSprite(loc, img);
+          return;
+      }
+      loc = loc.toLowerCase();
+      var targetSprite;
+      if (loc == 'topleft') {
+          targetSprite = $('#topLeftSprite');
+      } else if (loc == 'topright') {
+          targetSprite = $('#topRightSprite');
+      } else if (loc == 'bottomleft') {
+          targetSprite = $('#bottomLeftSprite');
+      } else if (loc == 'bottomright') {
+          targetSprite = $('#bottomRightSprite');
+      }
+      targetSprite.empty();
+      if (img == 'none' || img == 'clear') {
+          delete this.dendryEngine.state.sprites[loc];
+          targetSprite.children().fadeOut(this.fade_time);
+          targetSprite.empty();
+          return;
+      } else {
+          this.dendryEngine.state.sprites[loc] = img;
+          var image = new Image();
+          image.src = img;
+          targetSprite.fadeIn(this.fade_time);
+          targetSprite.append(image);
+      }
+  };
+
+  BrowserUserInterface.prototype.setSpriteStyle = function(loc, style) {
+      if (window.setSpriteStyle) {
+          window.setSpriteStyle(loc, style);
+          return;
+      }
+      var targetSprite;
+      if (loc == 'topleft') {
+          targetSprite = $('#topLeftSprite');
+      } else if (loc == 'topright') {
+          targetSprite = $('#topRightSprite');
+      } else if (loc == 'bottomleft') {
+          targetSprite = $('#bottomLeftSprite');
+      } else if (loc == 'bottomright') {
+          targetSprite = $('#bottomRightSprite');
+      } else {
+          return;
+      }
+      targetSprite.css(style);
+  };
+
+  // play audio with js
+  BrowserUserInterface.prototype.audio = function(audio) {
+      if (audio == 'null' || audio == 'none') {
+      } else {
+      }
+  };
+
   BrowserUserInterface.prototype.saveSettings = function() {
     if (typeof localStorage !== 'undefined') {
         localStorage[this.game.title + '_animate'] = this.animate;
@@ -1346,27 +1482,43 @@ window.game={"compiled":"{\"title\":\"Dendry_test\",\"author\":\"Autumn Chen\",\
     }
   };
 
-  BrowserUserInterface.prototype.loadSettings = function() {
+  BrowserUserInterface.prototype.loadSettings = function(defaultSettings) {
     if (typeof localStorage !== 'undefined') {
         if (localStorage[this.game.title + '_animate']) {
             this.animate = localStorage[this.game.title + '_animate'] != 'false' || false;
         } else {
-            this.animate = false;
+            if (defaultSettings && defaultSettings.animate) {
+                this.animate = defaultSettings.animate;
+            } else {
+                this.animate = false;
+            }
         }
         if (localStorage[this.game.title + '_disable_bg']) {
             this.disable_bg = localStorage[this.game.title + '_disable_bg'] != 'false' || false ;
         } else {
-            this.disable_bg = false;
+            if (defaultSettings && defaultSettings.disable_bg) {
+                this.disable_bg = defaultSettings.disable_bg;
+            } else {
+                this.disable_bg = false;
+            }
         }
         if (localStorage[this.game.title + '_animate_bg']) {
             this.animate_bg = localStorage[this.game.title + '_animate_bg'] != 'false' || false;
         } else {
-            this.animate_bg = true;
+            if (defaultSettings && defaultSettings.animate_bg) {
+                this.animate_bg = defaultSettings.animate_bg;
+            } else {
+                this.animate_bg = true;
+            }
         }
         if (localStorage[this.game.title + '_show_portraits']) {
             this.show_portraits = localStorage[this.game.title + '_show_portraits'] != 'false' || false;
         } else {
-            this.show_portraits = false;
+            if (defaultSettings && defaultSettings.show_portraits) {
+                this.show_portraits = defaultSettings.show_portraits;
+            } else {
+                this.show_portraits = true;
+            }
         }
     }
   };
